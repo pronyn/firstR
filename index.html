@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>New Web Project</title>
+        
+        <script src='http://code.jquery.com/jquery-1.11.1.min.js'></script>
+		<script src='script.js'></script>  
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.6/angular.min.js"></script>
+		<script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+
+		
+		<link rel='stylesheet' href='style.css'>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		
+		
+		<style>
+			table,tr,td{
+				border:1px solid black;
+			}
+			table tr:nth-child(odd){
+				background:lightgrey;
+			}
+		</style>
+		
+		
+    </head>
+    
+    
+    
+    <body>
+
+
+<!--
+
+
+         <div ng-app="person" ng-controller="personController">
+         First Name: <input type="text" ng-model="firstName"><br>
+         Last Name: <input type="text" ng-model="lastName"><br>
+         <br>
+         Full Name: {{fullName()}}
+         <script src='js/person.js'></script>
+         </div>
+
+ 
+-->
+
+
+
+		<div ng-app="customer" ng-controller="customerController">
+			<button ng-click='toggle()'>Hide/Show shit</button>
+			<div ng-show="myVar">
+				<p><button ng-disabled="mySwitch">Click Me!</button></p>
+				<p><input type="checkbox" ng-model="mySwitch">Button</p>
+				<p>Before paragraph</p>
+				<p ng-show="false">I'm not visible</p>
+				<p>After paragraph</p>
+				<button ng-click="count = count+1">Click me</button>
+				<p>{{count}}</p>
+			</div>
+			<table>
+			  <tr ng-repeat="x in names|orderBy:'Country'">
+			    <td>{{ x.Name }}</td>
+			    <td>{{ x.Country|uppercase }}</td>
+			  </tr>
+			</table>
+			<script src='js/customer.js'></script>
+			
+			<form novalidate>
+		    First Name:<br>
+		    <input type="text" ng-model="user.firstName"><br>
+		    Last Name:<br>
+		    <input type="text" ng-model="user.lastName">
+		    <br><br>
+		    <button ng-click="reset()">RESET</button>
+		  </form>
+		  <p>form = {{user}}</p>
+		  <p>master = {{master}}</p>
+		</div>
+		
+		 
+
+		
+
+    </body>
+</html>
