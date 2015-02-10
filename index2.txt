@@ -1,2 +1,3 @@
 I've created this file in the newBranch branch
 Modifying...
+I'm ready to change more than one line.

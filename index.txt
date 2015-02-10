@@ -1,4 +1,6 @@
 My first version of this shit-file has just been completed.
 I haven't been satisfied with my first version. So this is the second one.
 Third version
-I've change this file in the newBranch branch, but now I'm in master branch
+I've change this file in the newBranch branch, but now I'm in master branch.
+I'm ready to change more than one line.
+
