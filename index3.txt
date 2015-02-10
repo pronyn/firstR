@@ -1,2 +1,0 @@
-Learning git!
-git diff
